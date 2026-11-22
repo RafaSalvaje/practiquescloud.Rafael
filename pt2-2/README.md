@@ -13,14 +13,14 @@ Despliegue automatizado mediante **Terraform** (`main.tf`) en la región **`us-e
 - **Subredes (`Subnet A` y `Subnet B`):**
   - `Subnet A`: `10.0.1.0/24` en `us-east-1a` con asignación automática de IPv4 pública activada.
   - `Subnet B`: `10.0.2.0/24` en `us-east-1b` con asignación automática de IPv4 pública activada.
-  ![Subnet A y Subnet B](assets/vpc_subnets.png)
+![Subnet A y Subnet B](assets/vpc_subnets.png)
 - **Enrutamiento (`rtb-0879d20dbb2f56df4` e `igw-017d6dfbab98bb283`):** Internet Gateway asociado a `VPC-03` y tabla de rutas con salida por defecto (`0.0.0.0/0`) vinculada explícitamente a ambas subredes.
 ![Enrutamiento (IGW y RT)](assets/rt_routes.png)
-![Enrutamiento parte 2 (IGW y RT)](assets/rt_association.png)
+![Enrutamiento parte 2 (IGW y RT)](assets/rt_associations.png)
 - **Seguridad (`SG-Public-EC2`):**
   - **Entrada (Ingress):** SSH (`TCP/22`) abierto a `0.0.0.0/0` y tráfico `ICMP` restringido exclusivamente al rango interno de la VPC (`10.0.0.0/16`).
   - **Salida (Egress):** Todo el tráfico permitido hacia `0.0.0.0/0`.
-  ![Security Group](assets/security_group.png)
+![Security Group](assets/Security_group.png)
 - **Instancias EC2 (`ec2-a` y `ec2-b`):** Dos instancias `t3.micro` desplegadas una en cada zona de disponibilidad (`us-east-1a` y `us-east-1b`), con IP pública asignada y accesibles mediante el par de claves `vockey`.
 ![Instancias EC2](assets/ec2_instances.png)
 
