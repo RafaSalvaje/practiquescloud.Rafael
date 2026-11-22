@@ -30,18 +30,17 @@ Despliegue automatizado mediante **Terraform** (`main.tf`) en la región **`us-e
 
 ### Prueba de conectividad EC2s
 
-![Prueba de conectividad entre instancias EC2 (A)](assets/pingdea-b.png)
-
-![Prueba de conectividad entre instancias EC2 (B)](assets/pingdeb-a.png)
+| Desde `ec2-a` hacia `ec2-b` | Desde `ec2-b` hacia `ec2-a` |
+| :---: | :---: |
+| ![Ping de A a B](assets/pingdea-b.png) | ![Ping de B a A](assets/pingdeb-a.png) |
 
 ---
 
 ### Prueba de conectividad a internet
 
-![Prueba de conectividad a internet](assets/ec2-A-pingainternet.png)
-
-![Prueba de conectividad a internet](assets/ec2-B-pingainternet.png)
----
+| Salida a Internet desde `ec2-a` | Salida a Internet desde `ec2-b` |
+| :---: | :---: |
+| ![Internet desde A](assets/ec2-A-pingainternet.png) | ![Internet desde B](assets/ec2-B-pingainternet.png) |
 
 ## Instrucciones de Despliegue
 
