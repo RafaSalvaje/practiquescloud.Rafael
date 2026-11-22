@@ -1,6 +1,6 @@
-# Ejercicios de Cloud Computing 1.4pt - Terraform y AWS (Pt1.4) Por Rafael Subi
+# Ejercicios de Cloud Computing  - Por Rafael Subi
 
-Este repositorio contiene los ejercicios de Asix2opt_cloud_ra1_pt1.4 que se trada de usar **Terraform** para automatizar la creacion de instancias EC2 y VPCs.
+Este repositorio contiene los ejercicios de Cloud Computing, este readme se ira actualizando a medida que se vayan completando los ejercicios y prácticas de la asignatura.
 
 ## Estructura del Repositorio
 
@@ -9,6 +9,9 @@ Este repositorio contiene los ejercicios de Asix2opt_cloud_ra1_pt1.4 que se trad
 
 * **[`pt1-4-ex2/`](./pt1-4-ex2/)** — **Ejercicio 2: Diseño y Despliegue de VPC, Subredes y EC2**
   Creación de una VPC personalizada (`10.0.0.0/16`) con 3 subredes en `us-east-1a` (`Subnet-A`, `Subnet-B` y `Subnet-C`) y 6 instancias EC2 (2 por subred)
+
+* **[`pt2-2/`](./pt2-2/)** — **Práctica 2.2: Despliegue de Infraestructura Básica en AWS con Terraform**
+  Despliegue automatizado de una VPC con 2 subredes en distintas zonas de disponibilidad, salida a Internet mediante Internet Gateway, control de tráfico con Security Groups y 2 instancias EC2 comunicadas entre sí.
 
 ## Requisitos y Tecnologías
 * **Proveedor Cloud:** AWS (AWS Academy Learner Lab - Región `us-east-1`)
