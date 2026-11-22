@@ -26,11 +26,13 @@ Despliegue automatizado mediante **Terraform** (`main.tf`) en la región **`us-e
 
 **Prueba de conectividad:** Se ha verificado la comunicación entre ambas instancias mediante `ping` y `ssh`, confirmando que el tráfico ICMP está permitido únicamente dentro del rango de la VPC.
 
+## Muestra de conectividad entre instancias EC2 y hacia Internet
+
 ![Prueba de conectividad entre instancias EC2 (A)](assets/pingdea-b.png)
 ![Prueba de conectividad entre instancias EC2 (B)](assets/pingdeb-a.png)
 
 ---
-## Muestra de conectividad entre instancias EC2 y hacia Internet
+
 ![Prueba de conectividad a internet](assets/ec2-A-pingainternet.png)
 ![Prueba de conectividad a internet](assets/ec2-B-pingainternet.png)
 ---
