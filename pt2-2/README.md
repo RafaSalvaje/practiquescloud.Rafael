@@ -16,7 +16,7 @@ Despliegue automatizado mediante **Terraform** (`main.tf`) en la región **`us-e
   ![Subnet A y Subnet B](assets/vpc_subnets.png)
 - **Enrutamiento (`rtb-0879d20dbb2f56df4` e `igw-017d6dfbab98bb283`):** Internet Gateway asociado a `VPC-03` y tabla de rutas con salida por defecto (`0.0.0.0/0`) vinculada explícitamente a ambas subredes.
 ![Enrutamiento (IGW y RT)](assets/rt_routes.png)
-![Enrutamiento (IGW y RT)](assets/rt_association.png)
+![Enrutamiento parte 2 (IGW y RT)](assets/rt_association.png)
 - **Seguridad (`SG-Public-EC2`):**
   - **Entrada (Ingress):** SSH (`TCP/22`) abierto a `0.0.0.0/0` y tráfico `ICMP` restringido exclusivamente al rango interno de la VPC (`10.0.0.0/16`).
   - **Salida (Egress):** Todo el tráfico permitido hacia `0.0.0.0/0`.
